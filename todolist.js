@@ -10,12 +10,9 @@ function addItemToListBottom (){
     checkbox.type = "checkbox";
     newLI.insertBefore(checkbox, newLI.firstChild);
 
-    if (inputValue === '') {
-        alert("Please enter a to do item");
-      } else {
-        document.querySelector(".list-group").appendChild(newLI);
-      }
-      document.querySelector(".form-control").value = "";
+  
+    document.querySelector(".list-group").appendChild(newLI);
+    document.querySelector(".form-control").value = "";
       
 };
 
